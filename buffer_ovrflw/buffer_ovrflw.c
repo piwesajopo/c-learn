@@ -8,7 +8,7 @@
 // as it may lead to unexpected behavior.
 
 // Comment this to run proper code
-//#define OVERFLOW
+#define OVERFLOW
 
 int main () {
     char buffer[8];
