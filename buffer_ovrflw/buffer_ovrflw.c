@@ -18,7 +18,7 @@ int main () {
 
 #ifdef OVERFLOW
     // Produces a buffer overflow if
-    // User string is bigger than 7 bytes
+    // input string is bigger than 7 bytes
     strcpy(buffer, input);
 #else
     // Correct code to avoid buffer overflow:
