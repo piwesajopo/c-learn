@@ -1,11 +1,10 @@
 #include <stdio.h>
 #include <string.h>
 
-// This an example of buffer overflow. 
-
-// Please don't run this program on
-// your main machine (use a test device)
-// as it may lead to unexpected behavior.
+// This is an example of buffer overflow.
+// When a program has this kind of errors
+// it may lead to unexpected behavior in
+// specific circumstances.
 
 // Comment this to run proper code
 #define OVERFLOW
