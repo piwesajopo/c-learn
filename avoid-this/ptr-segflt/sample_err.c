@@ -18,14 +18,22 @@ int f(int *p)
 
 int main()
 {
-	int *p; // Avoid declaring unitialized pointers.
+	int *p; // Avoid declaring unitialized pointers
 	int i = 5;
 
 #ifdef INITIALIZE
 	p = &i;
 #endif
 
-	f(p);
+	// If p is not initialized can lead to UB.
+	// That is, either will access a valid 
+	// random memory location, or will cause a
+	// segmentation fault.
+//	f(p);
+
+	// Will cause a segmentation fault if 
+	// NULL pointer is used inside f().
+	f(NULL); 
 
 	printf("\n");
 
