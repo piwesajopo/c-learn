@@ -29,7 +29,7 @@ int main()
 	// That is, either will access a valid 
 	// random memory location, or will cause a
 	// segmentation fault.
-//	f(p);
+	f(p);
 
 	// Will cause a segmentation fault if 
 	// NULL pointer is used inside f().
