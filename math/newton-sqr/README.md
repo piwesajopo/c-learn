@@ -3,7 +3,7 @@
 This program uses the Newton-Raphson method to aproximate the square root of a number:
 
 
-$$ guess_{n+1} = \frac{guess_n + \frac{x}{guess_n}}{2} $$
+$ guess_{n+1} = \frac{guess_n + \frac{x}{guess_n}}{2} $
 
 Where:
 
