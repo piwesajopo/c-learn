@@ -9,15 +9,13 @@ double nwt_sqrt(double x) {
     }
     if (x == 0) return 0.0;
 
-	double guess   = x/2.0;
-	double epsilon = 0.000001;
+	double guess   = x;
+	double epsilon = 1e-7;
 
 	while(fabs(guess*guess - x) > epsilon)
 		guess = (x/guess + guess) / 2.0;
 
-	
 	return guess;
-
 }
 
 int main (int argc, char *argv[]) {
@@ -39,7 +37,7 @@ int main (int argc, char *argv[]) {
 	s = nwt_sqrt(x);
 
 	if(x>=0) {
-		printf("Square root of %g = %g\n\n", x, s);
+		printf("Square root of %g = %.10f\n\n", x, s);
 	} else{
 		printf("Please enter a positive number.\n\n");
 	} 
